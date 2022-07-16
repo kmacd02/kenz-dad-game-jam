@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b95538d956e14704cb0ab132914bc24f
+guid: 63be275781be446ffb21be1ccee8ff80
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,7 +104,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: waterWaves_0
+      name: piranhaSheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -118,14 +118,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0857cc10c9bcb4511ad60a6bf73983f3
-      internalID: 883399830
+      spriteID: b8c363db860ff477f8399445f4fd2ec9
+      internalID: 1607193195
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: waterWaves_1
+      name: piranhaSheet_1
       rect:
         serializedVersion: 2
         x: 32
@@ -139,50 +139,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a53e3905adcfd4b9186b6272ecbaf927
-      internalID: -349471397
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: waterWaves_2
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 89ebfc582f732432a803a22698d81644
-      internalID: -22515167
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: waterWaves_3
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f50a74be4999448d1b7d9b5787fa1768
-      internalID: -2143428262
+      spriteID: 1df9f61903e5740f6b6886645f8dab2c
+      internalID: 524552198
       vertices: []
       indices: 
       edges: []
@@ -198,10 +156,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      waterWaves_1: -349471397
-      waterWaves_3: -2143428262
-      waterWaves_0: 883399830
-      waterWaves_2: -22515167
+      piranhaSheet_0: 1607193195
+      piranhaSheet_1: 524552198
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
