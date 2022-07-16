@@ -138,7 +138,6 @@ GameObject:
   - component: {fileID: 218539447}
   - component: {fileID: 218539448}
   - component: {fileID: 218539450}
-  - component: {fileID: 218539449}
   - component: {fileID: 218539451}
   m_Layer: 3
   m_Name: splunkerSpriteIdle
@@ -292,25 +291,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 218539451}
-  runSpeed: 40
---- !u!111 &218539449
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 218539441}
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Animation: {fileID: 0}
-  m_Animations:
-  - {fileID: 7400000, guid: 3530369a5fdc744a1b7caf5660627ea0, type: 2}
-  - {fileID: 7400000, guid: d37a8a586e1b6434b8430c13ef23575a, type: 2}
-  - {fileID: 7400000, guid: 6a6a4560a87f74d4e80dbb49ffd446a3, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 0
-  m_AnimatePhysics: 0
-  m_CullingType: 0
+  animator: {fileID: 218539450}
+  runSpeed: 20
 --- !u!95 &218539450
 Animator:
   serializedVersion: 4
