@@ -138,6 +138,7 @@ GameObject:
   - component: {fileID: 218539442}
   - component: {fileID: 218539447}
   - component: {fileID: 218539448}
+  - component: {fileID: 218539450}
   - component: {fileID: 218539449}
   m_Layer: 3
   m_Name: splunkerSpriteIdle
@@ -327,14 +328,37 @@ Animation:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 218539441}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Animation: {fileID: 0}
-  m_Animations: []
+  m_Animations:
+  - {fileID: 7400000, guid: 3530369a5fdc744a1b7caf5660627ea0, type: 2}
+  - {fileID: 7400000, guid: d37a8a586e1b6434b8430c13ef23575a, type: 2}
+  - {fileID: 7400000, guid: 6a6a4560a87f74d4e80dbb49ffd446a3, type: 2}
   m_WrapMode: 0
-  m_PlayAutomatically: 1
+  m_PlayAutomatically: 0
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!95 &218539450
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218539441}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4c30d686a429d423ebd5cf6fd29a4f83, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &868787136
 GameObject:
   m_ObjectHideFlags: 0
@@ -753,8 +777,8 @@ Tilemap:
   - first: {x: -1, y: -3, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 4
+      m_TileSpriteIndex: 4
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -773,8 +797,8 @@ Tilemap:
   - first: {x: 1, y: -3, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 2
+      m_TileSpriteIndex: 2
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -842,28 +866,28 @@ Tilemap:
       m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 12
+  - m_RefCount: 10
     m_Data: {fileID: 11400000, guid: 5583bc29d643bd54abe4792e511d583c, type: 2}
   - m_RefCount: 13
     m_Data: {fileID: 11400000, guid: 1aade9bb7d7c8cd4584882cfda20c080, type: 2}
-  - m_RefCount: 1
+  - m_RefCount: 2
     m_Data: {fileID: 11400000, guid: 998f32a73764527468bcad6a6f722447, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 98dfdeffda81f9c41b596949ac7be935, type: 2}
-  - m_RefCount: 1
+  - m_RefCount: 2
     m_Data: {fileID: 11400000, guid: 6b0c58b0006b8004fb2d38d54bdedd8a, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: a41dd994faeb5da4ba230b8ce754837d, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 12
+  - m_RefCount: 10
     m_Data: {fileID: 21300000, guid: 629d53c65188c4279a5cc291dafeb331, type: 3}
   - m_RefCount: 13
     m_Data: {fileID: 21300000, guid: 831d0d18806474529b8cea452a4fe855, type: 3}
-  - m_RefCount: 1
+  - m_RefCount: 2
     m_Data: {fileID: 21300000, guid: faa82ae59c62545fca922a06ae2fb741, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: 839036c0ee0154730a44d03080e25fdc, type: 3}
-  - m_RefCount: 1
+  - m_RefCount: 2
     m_Data: {fileID: 21300000, guid: 4e05ca104757c424a974ea786022ffeb, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: 8bae4f6e87301426bb3fd0dec1a9204b, type: 3}
@@ -924,6 +948,7 @@ GameObject:
   - component: {fileID: 2129369456}
   - component: {fileID: 2129369455}
   - component: {fileID: 2129369454}
+  - component: {fileID: 2129369457}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -949,7 +974,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.15294118, g: 0.15294118, b: 0.21176471, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -997,3 +1022,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2129369457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2129369453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a160d838ff8b4b4693ac20007e008c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AssetsPPU: 32
+  m_RefResolutionX: 640
+  m_RefResolutionY: 320
+  m_UpscaleRT: 0
+  m_PixelSnapping: 0
+  m_CropFrameX: 0
+  m_CropFrameY: 0
+  m_StretchFill: 0
