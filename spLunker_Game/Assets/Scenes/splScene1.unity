@@ -135,11 +135,11 @@ GameObject:
   - component: {fileID: 218539445}
   - component: {fileID: 218539444}
   - component: {fileID: 218539443}
-  - component: {fileID: 218539442}
   - component: {fileID: 218539447}
   - component: {fileID: 218539448}
   - component: {fileID: 218539450}
   - component: {fileID: 218539449}
+  - component: {fileID: 218539451}
   m_Layer: 3
   m_Name: splunkerSpriteIdle
   m_TagString: Player
@@ -147,34 +147,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &218539442
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 218539441}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 148cb0c25191d4cc383a9c7affc30e5f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_JumpForce: 400
-  m_CrouchSpeed: 0.36
-  m_MovementSmoothing: 0.05
-  m_AirControl: 0
-  m_WhatIsGround:
-    serializedVersion: 2
-    m_Bits: 55
-  m_GroundCheck: {fileID: 868787137}
-  m_CeilingCheck: {fileID: 1353177893}
-  m_CrouchDisableCollider: {fileID: 0}
-  OnLandEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  OnCrouchEvent:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!58 &218539443
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -319,7 +291,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa4e1bc627d73a04fa41794125b5d61f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 218539442}
+  controller: {fileID: 218539451}
   runSpeed: 40
 --- !u!111 &218539449
 Animation:
@@ -359,6 +331,34 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &218539451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218539441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da7ca1ea6058170408a41b5ac344dd16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_JumpForce: 400
+  m_CrouchSpeed: 0.36
+  m_MovementSmoothing: 0.05
+  m_AirControl: 0
+  m_WhatIsGround:
+    serializedVersion: 2
+    m_Bits: 55
+  m_GroundCheck: {fileID: 868787137}
+  m_CeilingCheck: {fileID: 1353177893}
+  m_CrouchDisableCollider: {fileID: 218539444}
+  OnLandEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnCrouchEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &868787136
 GameObject:
   m_ObjectHideFlags: 0
