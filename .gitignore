@@ -60,3 +60,6 @@ crashlytics-build.properties
 
 spLunker_Game/.DS_Store
 spLunker_Game/.DS_Store
+*.dwlt
+spLunker_Game/UserSettings/Layouts/default-2021.dwlt
+*.dwlt
